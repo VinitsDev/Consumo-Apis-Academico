@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "1AUW/1SvyTPGWn4ZPVsdSo2yJVp3JnqPnUEEH2ErD84=",
+  "Source": "IMCapi",
+  "BasePath": "_content/IMCapi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

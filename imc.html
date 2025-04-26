@@ -1,0 +1,54 @@
+<!DOCTYPE html>>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title.Calculadora IMC> </title.Calculadora>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 20px;
+            }
+            .calculator {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            .calculator input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            .calculator button {
+                padding: 10px 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="calculator">
+            <h1>Calculadora de IMC</h1>
+            <label for="weight">Peso (KG)</label>
+            <input type="number" id="weight" placeholder="Inform o Peso em KG">
+            <br>
+
+            <label for="Height"> Altura (CM)</label>
+            <input type="number" id="height" placeholder="Informe a Altura em CM">
+            <br>
+
+            <button onclick="calculeIMC()">Calcular IMC</button>
+            <div id="result"></div>
+        </div>
+        <script>
+            async function calculeIMC() {
+
+                const weight = parseFloat(document.getElementById('weight').value) /100;
+                const height = parseFloat(document.getElementById('height').value) /100;
+
+                if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0){
+                    alert("Por favor, informe todos os dados corretamente!");
+                    return;
+                }
+
+                const imc = weight / (height*height);
+            }
+        </script>        
+    </body>
+</html>
